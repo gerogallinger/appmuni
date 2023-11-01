@@ -84,9 +84,9 @@ function SingIn() {
 
                 console.log("User to firebase: " + JSON.stringify(userToFirebase));
 
-                setIsLoading(false);
                 console.log("Estado del loader: " + isLoading);
                 navigate('/inicio-sesion');
+                setIsLoading(false);
 
             })
             .catch((error) => {
@@ -95,7 +95,7 @@ function SingIn() {
                 console.log('Error ' + errorCode + ' ' + errorMessage);
 
             });
-        setIsLoading(false);
+
     }
 
 
@@ -105,7 +105,7 @@ function SingIn() {
             {isLoading && (
                 <div className="fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 backdrop-filter backdrop-blur-sm z-10">
 
-                    <div class="border-gray-300 h-20 w-20 animate-spin rounded-full border-8 border-t-slate-600" />
+                    <div className="border-gray-300 h-20 w-20 animate-spin rounded-full border-8 border-t-slate-600" />
                     <br />
                     <h3 className='border-gray-300'>Estamos creando tu usuario</h3>
                 </div>
