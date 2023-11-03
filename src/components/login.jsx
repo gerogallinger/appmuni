@@ -58,7 +58,7 @@ function Login() {
                 <img src={urlFoto} alt="" className="mx-auto border rounded w-full md:w-2/3 h-auto" />
             </div>
             <div id="form-container"
-                className="p-12 rounded-lg shadow-2xl m-6 w-11/12 md:w-5/12 bg-slate-200">
+                className="p-12 rounded-lg shadow-2xl m-6 w-11/12 md:w-5/12 bg-slate-200  max-w-md">
                 <h2 id="form-title"
                     className="text-center text-3xl font-bold mb-10 text-gray-800 bg-slate-200">
                     Inicio de Sesion

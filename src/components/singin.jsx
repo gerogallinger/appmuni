@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { auth, db } from '../configs/firebaseConfig'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { BallTriangle } from 'react-loader-spinner';
+
 
 import { setDoc, doc } from "firebase/firestore";
 
@@ -116,7 +116,7 @@ function SingIn() {
                 <div className="p-2  rounded-md bg-slate-400">
                     <img src={urlFoto} alt="" className="mx-auto border rounded w-full md:w-2/3 h-auto" />
                 </div>
-                <div className=' w-11/12 md:w-5/12 p-8 rounded-lg drop-shadow-2xl bg-gray-200'>
+                <div className=' w-11/12 md:w-5/12 p-8 rounded-lg drop-shadow-2xl bg-gray-200 max-w-md'>
                     <h1 className='text-center align-middle bg-gray-200 font-bold text-2xl'>
                         Crea una cuenta
                     </h1>

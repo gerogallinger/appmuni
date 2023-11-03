@@ -1,6 +1,7 @@
 
 import './App.css';
 import Login from './components/login.jsx'
+import OptionList from './components/optionlist.jsx';
 import SingIn from './components/singin'
 import {
   BrowserRouter,
@@ -16,15 +17,10 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        {/* <Route path="/inicio" Component={Inicio} /> */}
-
-        {/* <Route path="/registrador" Component={Registrador} /> */}
-        {/* <Route path="/option-list" Component={ListaOpciones} /> */}
-
         <Route path="/sing-in" Component={Login} />
         <Route path="/sing-up" Component={SingIn} />
-        {/* <Route path="/calcu-int-comp" Component={InteresCompuesto} />
-        <Route path="/regla3" Component={ReglaTres} /> */}
+        <Route path="/option-list" Component={OptionList} />
+        
         <Route path="*" Component={Login} />
       </Routes>
 
