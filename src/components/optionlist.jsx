@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import OptionElement from './minicomponents/optionElement'
+import NuevoReclamo from './newreclamo.jsx';
 
 
 
@@ -24,7 +25,7 @@ function OptionList() {
 
                 <br />
                 <div className='flex flex-col items-center border rounded-lg py-4'>
-                    <OptionElement titulo="Crear un nuevo reclamo" route="" />
+                    <OptionElement titulo="Crear un nuevo reclamo" route="/new-reclamo" />
                     <OptionElement titulo="Lista de reclamos" route="" />
                     <OptionElement titulo="Mi título" route="" />
                     <OptionElement titulo="Mi título" route="" />
